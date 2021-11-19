@@ -1,0 +1,278 @@
+body {
+  font-family:'Ubuntu', sans-serif;
+  color: #201b2d;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background: rgba(102,204,255,1);
+background: -moz-linear-gradient(-45deg, rgba(102,204,255,1) 0%, rgba(51,153,204,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(102,204,255,1)), color-stop(100%, rgba(51,153,204,1)));
+background: -webkit-linear-gradient(-45deg, rgba(102,204,255,1) 0%, rgba(51,153,204,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(102,204,255,1) 0%, rgba(51,153,204,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(102,204,255,1) 0%, rgba(51,153,204,1) 100%);
+background: linear-gradient(135deg, rgba(102,204,255,1) 0%, rgba(51,153,204,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ccff', endColorstr='#3399cc', GradientType=1 );
+
+color: #fff;
+padding-bottom: 50px;
+/* border: greenyellow solid 2px; */
+}
+
+.logo {
+  padding: 61px 0 0px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+
+}
+.offer {
+  width: 567px;
+}
+
+.tittle {
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-bottom: 30px; 
+}
+
+.tittle span {
+  font-size: 59px;
+  
+}
+
+.intro {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-bottom: 45px;
+  width: 404px;
+  
+}
+
+.btn {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  background: #ffcc33;
+  text-align: center;
+  padding: 18px;
+  width: 222px;
+  transition: all 0.5s ease;
+  border: none;
+}
+.btn:hover {
+  background: #dfb614;
+}
+
+/* 2 секция */
+
+.dream-tittle {
+  font-family: 'Ubuntu', sans-serif;
+  color: #333;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dream {
+  padding-top: 108px;
+  padding-bottom: 100px;
+}
+
+.travel-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  /* border: greenyellow solid 2px; */
+}
+.item {
+  width: 280px;
+  text-align: center;
+  /* border: greenyellow solid 2px; */
+
+}
+.img-item {
+  padding-bottom: 20px;
+  
+}
+
+.item-tittle {
+  font-size: 19px;  
+ }
+
+.item-text {
+  margin-top: 15px;
+  line-height: 1.4em; 
+}
+
+/* 3 секция  */
+
+.mail {
+  background: #ecf3f8;
+  padding-top: 105px;
+  padding-bottom: 102px; 
+}
+
+.form {
+  display: flex;  
+  flex-direction: column;
+  width: 343px;  
+  /* border: 2px solid #5233ff; */
+  margin: 58px auto 0;
+ }
+
+.input {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;  
+  border: 1px solid #999;
+  border-radius: 3px; 
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.btn-form {
+ width: 343px;
+ cursor: pointer;
+}
+
+/* 4 секция footer */
+
+.footer {
+  background: #164d7a;
+  padding: 55px 0;
+}
+
+ .credits {
+   font-family: 'Open Sans', sans-serif;
+   color: #fff;
+   font-size: 14px;
+   /* border: 2px solid #5233ff; */
+   text-align: center;
+   
+ }
+
+ /* Media запросы ==========
+ ====================================*/
+
+ /* 992px - 1200px */
+ @media screen and (max-width: 1200px) {
+   .container {
+     width: 960px;
+   }
+ }
+
+ /* 768px - 992px */
+ @media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  .offer {
+    width: 100%;
+  }
+
+  .intro {
+    width: 90%;
+  }
+
+  .desktop {
+    display: block;
+    width: 641px;
+    margin-top: 45px;
+  }
+
+  .header {
+    padding-bottom: 0;
+  }
+  
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .logo {
+    display: block;
+    margin: auto;
+  }
+
+  .travel-items {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .item {
+    width: auto;
+    margin-top: 25px;
+  }
+
+  .desktop {
+    width: 100%;
+  }
+
+  .btn {
+    margin: auto;
+  }
+
+
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  .tittle {
+    text-align:center;
+  }
+
+  .intro {
+    text-align:center;
+    margin: auto;
+    margin-bottom: 45px;
+    /* border: 2px solid #5233ff; */
+  }
+
+  .form {
+    width: 95%;
+  }
+
+  .btn-form {
+    width: 100%;
+  }
+
+}
